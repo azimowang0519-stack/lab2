@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Profile Showcase</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">ZW</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="bio-hero">
+            <p class="hello">Hello, I'm</p>
+            <h1>Zimo Wang</h1>
+            <p>I am a student at the University of Toronto studying Digital Enterprise Management with a focus on marketing. I enjoy writing campaign content and planning events.</p>
+        </section>
+
+        <section class="card-grid" id="projects">
+            <article class="card">
+                <img src="images/project1.jpg" alt="Poster from the youth study tour campaign">
+                <h2>Study Tour Campaign</h2>
+                <p>Promotional copy and social media posts for a youth study tour brand in Nanjing.</p>
+                <details>
+                    <summary>View details</summary>
+                    <p>I planned the post schedule and wrote captions that matched the brand's friendly tone.</p>
+                </details>
+            </article>
+            <article class="card">
+                <img src="images/project2.jpg" alt="Photo from the cultural showcase event">
+                <h2>Event Planning</h2>
+                <p>Helped plan a cultural showcase event, including the schedule, poster text and promotion.</p>
+                <details>
+                    <summary>View details</summary>
+                    <p>I worked with the team on the event flow and wrote the text for the posters.</p>
+                </details>
+            </article>
+            <article class="card">
+                <img src="images/project3.jpg" alt="Research notes and charts">
+                <h2>Research Assistant</h2>
+                <p>Worked on a marketing research project at Imperial College Business School.</p>
+                <details>
+                    <summary>View details</summary>
+                    <p>I helped collect and organize data about how people make buying decisions.</p>
+                </details>
+            </article>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#received">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p class="received" id="received">Received! Thank you for your message.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Zimo Wang | CCT360 Lab 2</p>
+    </footer>
+</body>
+</html>
