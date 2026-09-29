@@ -5,13 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Smooth scrolling when clicking nav links */
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: #fdf6e3;
+    background-color: #fdf8ec;
     color: #333333;
 }
 
@@ -19,6 +19,7 @@ body{
 h1, h2, .logo, .hello{
     font-family: 'Fredoka', sans-serif;
 }
+
 
 
 .navbar{
@@ -35,7 +36,7 @@ h1, h2, .logo, .hello{
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background-color: #fdf6e3;
+    background-color: #fdf8ec;
     color: #5b7fb5;
     font-size: 1.5rem;
     font-weight: 700;
@@ -65,7 +66,7 @@ ul li a{
 
 
 ul li a:hover{
-    background-color: #fdf6e3;
+    background-color: #fdf8ec;
     color: #5b7fb5;
 }
 
@@ -78,33 +79,35 @@ ul li a:hover{
     padding: 1.5rem 1rem;
 }
 
+
 .bio-hero{
     flex-basis: 100%;
     padding: 2.5rem 1.5rem;
     text-align: center;
-    background-color: #fbe3b0;
+    background-color: #faf0c8;
     border-radius: 10px;
 }
 
 .hello{
-    color: #c0503f;
-    font-size: 1.3rem;
+    color: #c04e3f;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .bio-hero h1{
     margin-bottom: 1rem;
     color: #5b7fb5;
-    font-size: 2.8rem;
+    font-size: 3rem;
     text-shadow: 3px 3px 0 white;
 }
+
 
 .card-grid{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.5rem;
-    background-color: #f9d77e;
+    background-color: #f7cf6e;
     border-radius: 10px;
 }
 
@@ -116,9 +119,9 @@ ul li a:hover{
     gap: 1rem;
     padding: 1.5rem;
     text-align: center;
-    background-color: #fffaf0;
+    background-color: #fffbf2;
     border-radius: 10px;
-    border-top: 5px solid #fffaf0;
+    border-top: 5px solid #fffbf2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
 }
@@ -140,8 +143,8 @@ ul li a:hover{
 
 .card:hover{
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-top-color: #f0a95b;
+    box-shadow: 0 8px 16px rgba(192, 78, 63, 0.3);
+    border-top-color: #c04e3f;
 }
 
 
@@ -162,12 +165,16 @@ ul li a:hover{
 }
 
 .card summary:hover{
-    background-color: #c0503f;
+    background-color: #c04e3f;
+}
+
+
+.card summary:focus{
+    outline: 3px solid #b3c9d6;
 }
 
 .card details p{
     margin-top: 0.8rem;
-    font-size: 0.9rem;
 }
 
 
@@ -176,12 +183,12 @@ ul li a:hover{
     flex-direction: column;
     gap: 1rem;
     padding: 1.5rem;
-    background-color: #fbe3b0;
+    background-color: #b3c9d6;
     border-radius: 10px;
 }
 
 .contact h2{
-    color: #c0503f;
+    color: #c04e3f;
     text-align: center;
 }
 
@@ -194,9 +201,9 @@ ul li a:hover{
 .contact-form input,
 .contact-form textarea{
     padding: 0.6rem;
-    border: 2px solid #f0a95b;
+    border: 2px solid #5b7fb5;
     border-radius: 8px;
-    background-color: #fffaf0;
+    background-color: #fffbf2;
 }
 
 .contact-form button{
@@ -204,7 +211,7 @@ ul li a:hover{
     padding: 0.7rem;
     border: none;
     border-radius: 20px;
-    background-color: #5b7fb5;
+    background-color: #c04e3f;
     color: white;
     font-weight: 600;
     cursor: pointer;
@@ -212,7 +219,7 @@ ul li a:hover{
 }
 
 .contact-form button:hover{
-    background-color: #c0503f;
+    background-color: #5b7fb5;
 }
 
 
@@ -220,7 +227,7 @@ ul li a:hover{
     display: none;
     padding: 0.8rem;
     border-radius: 8px;
-    background-color: #b9d3c2;
+    background-color: #faf0c8;
     text-align: center;
     font-weight: 600;
 }
@@ -230,10 +237,13 @@ ul li a:hover{
 }
 
 .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
     padding: 1rem;
     text-align: center;
     color: white;
-    background-color: #c0503f;
+    background-color: #c04e3f;
 }
 
 
@@ -250,8 +260,12 @@ ul li a:hover{
         gap: 1.5rem;
     }
 
+    .hello{
+        font-size: 2.5rem;
+    }
+
     .bio-hero h1{
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .card-grid{
