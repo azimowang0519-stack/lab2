@@ -15,7 +15,7 @@ body{
     color: #333333;
 }
 
-/* Headings use a rounded, playful font */
+
 h1, h2, .logo, .hello{
     font-family: 'Fredoka', sans-serif;
 }
